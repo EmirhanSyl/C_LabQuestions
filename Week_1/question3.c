@@ -19,4 +19,5 @@ int main(){
     } while (c != 'x');
     
     printf("%s \n", array);
+    return 0;
 }
