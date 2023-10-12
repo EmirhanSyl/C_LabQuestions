@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// Take int values from console until user enters '-1'. Then, sum all given numbers and print it
 int main(){
     int i;
     int total = 0;

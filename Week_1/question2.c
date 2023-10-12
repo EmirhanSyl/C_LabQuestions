@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// Take 3 char from user via console. Then print a character that has biggest ASCII number
 int main()
 {
     int highestAscii = -1;

@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// a) Take characters from console and store in an array until user enters 'x' character. When x entered, print the array as string.
+// b) When user enters 'c' character, print the array characters as string
 int main(){
     char array[10];
     char c;
