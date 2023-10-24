@@ -7,7 +7,6 @@ int main()
 {
     int number = 12321;
     int reverseNum = 0;
-    int multiplier = 1;
 
     int temp = number;
     while (temp != 0)
