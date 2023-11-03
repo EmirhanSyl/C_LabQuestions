@@ -63,6 +63,13 @@
 			],
 			"group": "build",
 			"detail": "compiler: C:/MinGW/bin/gcc.exe"
+		},
+		{
+			"type": "cmake",
+			"label": "CMake: configure",
+			"command": "configure",
+			"problemMatcher": [],
+			"detail": "CMake template configure task"
 		}
 	]
 }
