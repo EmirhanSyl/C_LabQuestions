@@ -9,6 +9,9 @@
         "array": "c",
         "initializer_list": "c",
         "utility": "c",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "string": "cpp",
+        "deque": "cpp",
+        "vector": "cpp"
     }
 }

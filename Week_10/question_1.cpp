@@ -4,6 +4,7 @@ using namespace std;
 
 #include <iostream>
 #include <string>
+#include <vector>
 
 using namespace std;
 
@@ -24,12 +25,14 @@ public:
         year = 0;
     }
 
-    Car(const string &brand, const string &model, int year)
+    // Both Constructors are the same
+    Car(string brand, string model, int year) : brand(brand), model(model), year(year){};
+    /*Car(const string &brand, const string &model, int year)
     {
         this->brand = brand;
         this->model = model;
         this->year = year;
-    }
+    }*/
 
     // Setter
     void setBrand(const string &brand)
@@ -72,12 +75,6 @@ public:
         return this->price;
     }
 
-    void displayInfo() const
-    {
-        cout << "Brand: " << brand << endl;
-        cout << "Model: " << model << endl;
-        cout << "Year: " << year << endl;
-    }
     void setCarDetails()
     {
         cout << "Enter car details:" << endl;
@@ -93,9 +90,34 @@ public:
         cout << "Year: ";
         cin >> this->year;
     }
+
+    void displayInfo();
 };
 
-,,
+class Seller{
+public:
+    vector<Car> cars;
+
+    void addCar(Car car){
+        cars.push_back(car);
+    }
+
+    int totalPrice(){
+        int totalPrice = 0;
+        for (Car car : cars)
+        {
+            totalPrice+= car.getPrice();
+        }
+        return totalPrice;
+    }
+};
+
+void Car::displayInfo()
+{
+    cout << "Brand: " << brand << endl;
+    cout << "Model: " << model << endl;
+    cout << "Year: " << year << endl;
+}
 
 int main()
 {
